@@ -5,7 +5,6 @@ import BgImage from '../components/UI/bgImage';
 import InfoListElement from '../components/UI/infoListElement';
 
 const home = () => {
-
     return (
         <div>
             <div className="welcomeImage">

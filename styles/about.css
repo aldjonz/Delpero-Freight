@@ -11,7 +11,7 @@
     color: var(--secondaryWhite);
     font-size: 22px;
     top: 18%;
-    left: 8%;
+    right: 6%;
     text-align: right;
 }
 .aboutInfoContainer {
@@ -106,6 +106,8 @@
 @media only screen and (min-width: 600px) {
     .aboutHeaderTextContainer {
         font-size: 200%;
+        left: 8%;
+        right: auto;
     }
     .aboutText h1 {
         width: 60%;
