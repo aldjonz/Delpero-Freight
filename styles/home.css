@@ -1,0 +1,159 @@
+/* home page */
+.homeHeaderImageContainer {
+  /* transform: translateX(-40%); */
+  height: 100vh;
+  /* position: relative; */
+  background-image: url('/images/ets2_20210106_212752_00.png');
+  background-position: 60% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: var(--contentSpace);
+}
+.homeHeaderTextContainer {
+  position: absolute;
+  color: var(--secondaryWhite);
+  font-size: 22px;
+  top: 16%;
+  left: 8%;
+  text-align: left;
+}
+.textThin {
+  max-width: 64%;
+}
+.homeInfo {
+  margin-bottom: var(--contentSpace);
+}
+.homeInfoTextContainer {
+  padding: 20px;
+  font-weight: var(--fontWeightSecondary);
+  font-size: var(--fontSize);
+  line-height: var(--lineHeight);
+  margin-bottom: var(--contentSpace);
+}
+.homeInfoText {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.ytVideo {
+  width: 100%;
+  height: 315px;
+}
+.unique {
+  margin-bottom: var(--contentSpace);
+}
+.unique h1 {
+    padding-top: 30px;
+    border-bottom: 2px solid var(--secondaryWhite);
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 160%;
+    width: 80%;
+    margin: auto;
+    font-weight: var(--fontWeightPrimary);
+    color: var(--secondaryWhite);
+}
+.homeBottomImg {
+  width: 100vw;
+  height: 200px;
+}
+.bottomImgTextWrapper {
+  position: absolute;
+  width: 140px;
+  height: fit-content;
+  text-align: left;
+  right: 6%;
+  transform: translateY(-200px);
+}
+.bottomImgTextWrapper h1 {
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--secondaryWhite);
+}
+
+   @media only screen and (min-width: 600px) {
+    .homeHeaderTextContainer {
+      font-size: 200%;
+    }
+    .unique h1 {
+      font-size: 300%;
+    }
+    .homeBottomImg {
+      height: 300px;
+    }
+    .bottomImgTextWrapper {
+      transform: translateY(-300px);
+      width: 240px;
+    }
+    .bottomImgTextWrapper h1 {
+      font-size: 40px;
+    }
+   }
+  
+  @media only screen and (min-width: 769px) {
+    .homeHeaderTextContainer {
+      width: 60%;
+    }
+    .homeInfo {
+      display: flex;
+    }
+    .homeInfoTextContainer {
+      width: 50%;
+      border-bottom: none;
+    }
+    .homeInfoText {
+      margin: auto;
+    }
+    .ytVideo {
+      width: 50%;
+      height: 400px;
+    }
+    .unique h1 {
+      padding: 40px;
+    }
+    .homeBottomImg {
+      height: 400px;
+    }
+    .bottomImgTextWrapper {
+      right: 8%;
+      transform: translateY(-340px);
+      width: 280px;
+    }
+    .bottomImgTextWrapper h1 {
+      font-size: 50px;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    
+    .homeBottomImg {
+      height: 400px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .homeHeaderTextContainer {
+      width: 50%;
+      top: 10%;
+    }
+    .homeHeaderTextContainer h1 {
+      font-size: 240%;
+    }
+    .homeInfoTextContainer {
+      padding: 20px 150px;
+    }
+    .homeBottomImg {
+      height: 740px;
+    }
+    .bottomImgTextWrapper {
+      width: 400px;
+      transform: translateY(-640px);
+    }
+    .bottomImgTextWrapper h1 {
+      font-size: 80px;
+    }
+  }
+  @media only screen and (min-width: 1400px) {
+    .bottomImgTextWrapper {
+      right: 18%;
+    }
+  }

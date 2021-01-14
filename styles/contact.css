@@ -1,0 +1,136 @@
+.contactContainer {
+    margin-top: 100px;
+}
+.contactForm {
+    text-align: center;
+    margin-bottom: var(--contentSpace);
+}
+.contactForm p {
+    font-size: 20px;
+    padding: 10px;
+}
+.contactForm h1 {
+    font-weight: var(--fontWeightPrimary);
+    font-size: 240%;
+    border-bottom: 2px solid var(--primaryColour);
+    padding-bottom: 20px;
+    width: 80%;
+    margin: auto;
+}
+.contactInput {
+    padding: 8px;
+    margin-bottom: 20px;
+    width: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: var(--fontWeightSecondary);
+    font-size: 16px;
+    border: none;
+    transition-duration: .2s;
+    border-bottom: 1px solid var(--primaryColour);
+    border-radius: 5px;
+}
+#message {
+    height: 100px;
+}
+.contactInput:focus {
+    outline: none;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.formButton {
+    width: 100px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: var(--primaryColour);
+    opacity: 0.8;
+    font-weight: var(--fontWeightSecondary);
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    transition-duration: .3s;
+    color: #fff;
+}
+.formButton:focus {
+    outline: none;
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    opacity: 1;
+}
+.formButton:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    opacity: 1;
+}
+.contactInfo {
+    padding-top: 20px;
+}
+.contactCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contactCard {
+    width: 230px;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+    background: var(--secondaryWhite);
+    opacity: 0.9;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    height: 190px;
+    overflow: hidden;
+}
+.cardContentWrapper {
+    transition-duration: .3s;
+}
+.cardIcon {
+    font-size: 32px;
+    color: var(--primaryColour);
+    opacity: .8;
+    transition-duration: .3s;
+}
+.contactCard p {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--primaryColour);
+    transition-duration: .3s;
+}
+.contactCard .emailButton {
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeightSecondary);
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+    .contactCardContainer {
+        width: fit-content;
+        margin: auto;
+    }
+    .contactCard {
+        margin: 30px;
+    }
+    .contactForm h1 {
+        width: 60%;
+    }
+    .contactInput {
+        width: 300px;
+        height: 40px;
+    }
+    .formButton {
+        width: 120px;
+        height: 48px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .contactCard{
+        width: 300px;
+        height: 240px;
+        padding: 30px;
+    }
+    .contactCard p {
+        font-size: 14px;
+    }
+}

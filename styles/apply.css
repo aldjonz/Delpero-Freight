@@ -1,0 +1,131 @@
+.applyHeaderImageContainer {
+    height: 100vh;
+    background-image: url('/images/ets2_20210107_011446_00.png');
+    background-position: 8% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: var(--contentSpace);
+}
+.applyHeaderTextContainer {
+    position: absolute;
+    color: var(--secondaryWhite);
+    font-size: 22px;
+    top: 16%;
+    left: 14%;
+    text-align: left;
+}
+.applyRequirementsContainer {
+    width: 90%;
+    margin-left: 5%;
+    padding: 10px;
+    margin-bottom: var(--contentSpace);
+    padding-top: 70px;
+}
+.applyTitle {
+    border-bottom: 2px solid var(--primaryColour);
+    width: 100%;
+}
+.applyTitle h1 {
+    font-weight: var(--fontWeightPrimary);
+    font-size: 300%;
+}
+.applyRequirementsContainer p {
+    font-weight: var(--fontWeightSecondary);
+    font-size: var(--fontSize);
+}
+.requirementsText ul {
+    list-style-type: none;
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeightSecondary);
+    line-height: var(--lineHeight);
+    list-style-type: decimal;
+}
+.requirementsText{
+    width: 100%;
+}
+.requirementsList {
+    width: 100%;
+}
+.requirementsVidWrapper {
+    margin-bottom: var(--contentSpace);
+}
+.requirementsVid iframe {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 5%;
+    border: none;
+}
+
+.joiningReason {
+    padding: 24px;
+    width: 100%;
+    margin-bottom: var(--contentSpace);
+}
+.joiningReason h1 {
+    border-bottom: 2px solid var(--primaryColour);
+    padding-bottom: 30px;
+    text-align: left;
+    font-size: 300%;
+}
+.reasonCardsContainer {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    .applyHeaderTextContainer {
+        left: 60%;
+        top: 30%;
+        font-size: 200%;
+    }
+    .applyHeader h1 {
+        padding: 20px;
+        font-size: 300%;
+    }
+    .applyHeaderImageContainer {
+        transform: translateX(0%);
+    }
+}
+@media only screen and (min-width: 768px) {
+    .applyTitle {
+        width: 50%;
+    }
+    .applyRequirementsContainer {
+        margin: 0 auto var(--contentSpace) auto;
+        width: 70%;
+    }
+    .reasonCardsContainer {
+        display: flex;
+    }
+    .bgImageApply {
+        height: 100%;
+    }
+    .requirementsVid {
+        height: 400px;
+    }
+    .requirementsList {
+        width: 100%;
+        margin-left: auto;
+    }
+    
+}
+@media only screen and (min-width: 992px) {
+    .requirementsVid {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+}
+@media only screen and (min-width: 1200px) {
+    .requirementsVid {
+        height: 500px;
+    }
+    .joiningReason {
+        width: 80%;
+        margin: var(--contentSpace) auto;
+    }
+    .applyHeaderTextContainer {
+        left: 46%;
+    }
+    .applyHeaderTextContainer h1 {
+        font-size: 240%;
+    }
+}
