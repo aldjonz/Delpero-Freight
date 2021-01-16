@@ -1,28 +1,20 @@
-import { motion } from 'framer-motion';
+import React, { useEffect } from 'react';
 
 import InternalButton from '../components/UI/Buttons/internalButton';
 import BgImage from '../components/UI/bgImage';
 import InfoListElement from '../components/UI/infoListElement';
 
 const home = () => {
+
     return (
         <div>
             <div className="welcomeImage">
                 <div className="homeHeaderImageContainer" >
                 </div>
-                <motion.div 
+                <div 
                     className="homeHeaderTextContainer"
-                    initial={{ 
-                        opacity: 0,
-                    }}
-                    animate={{
-                        opacity: 1,
-                        x: [-100, 0]
-                    }}
-                    transition={{ 
-                        duration: 1.4, 
-                        delay: 1.2 
-                    }}
+                    data-aos="fade-right"
+                    data-aos-delay="1200"
                 >
                     <h1>you're in good hands</h1>
                     <p>Start driving for Delpero Freight, a Virtual Trucking Company with an intention of innovation and expansion that resonates globally.</p>
@@ -31,14 +23,14 @@ const home = () => {
                         className="mainButton mainButtonWhite"
                         link="/apply"
                     />
-                </motion.div>
+                </div>
             </div>
             <div className="homeInfo">
                 <div className="homeInfoTextContainer">
-                    <div className="homeInfoText">
-                        <p>Delpero Freight is a Virtual Trucking Company for the popular games Euro Truck Simulator
+                    <div data-aos="fade-right" className="homeInfoText">
+                        <p >Delpero Freight is a Virtual Trucking Company for the popular games Euro Truck Simulator
                             2 & American Truck Simulator. We intend to change the stereotype when it comes to
-                            immersion, innovation & participation.</p>
+                            immers`ion, innovation & participation.</p>
                         <InternalButton 
                             text="Discover" 
                             className="mainButton mainButtonBlue"
@@ -56,35 +48,39 @@ const home = () => {
                 >
                     
                         <h1>What makes Delpero Freight unique?</h1>
-                        <div className="infoHolder">
+                        <div aos-data="fade-left" className="infoHolder">
                             <InfoListElement 
                                 title="Lorem Ipsum"
                                 infoText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
                                 className="leftInfoText infoText"
                                 borderColor="#ccc"
+                                scrollAnimation="fade-up-right"
                             />
                             <InfoListElement 
                                 title="Lorem Ipsum"
                                 infoText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
                                 className="rightInfoText infoText"
                                 borderColor="#ccc"
+                                scrollAnimation="fade-up-left"
                             />
                             <InfoListElement 
                                 title="Lorem Ipsum"
                                 infoText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
                                 className="leftInfoText infoText"
                                 borderColor="#ccc"
+                                scrollAnimation="fade-up-right"
                             />
                             <InfoListElement 
                                 title="Lorem Ipsum"
                                 infoText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
                                 className="rightInfoText infoText"
                                 borderColor="#ccc"
+                                scrollAnimation="fade-up-left"
                             />
                         </div>
                 </BgImage>
             </div>
-            <div>
+            <div data-aos="fade">
                 <img className="homeBottomImg" src="/images/ets2_20210107_005935_00.png" alt="Truck" />
                 <div className="bottomImgTextWrapper">
                     <h1>our roots make us</h1>

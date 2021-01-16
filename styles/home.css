@@ -133,7 +133,7 @@
   @media only screen and (min-width: 1200px) {
     .homeHeaderTextContainer {
       width: 50%;
-      top: 10%;
+      top: 20%;
     }
     .homeHeaderTextContainer h1 {
       font-size: 240%;

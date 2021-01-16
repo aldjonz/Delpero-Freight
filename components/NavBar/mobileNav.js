@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -9,13 +10,16 @@ const mobileNav = () => {
     const [navBackground, setNavBackground] = useState("auto");
 
     useEffect(() => {
-        document.addEventListener("scroll", () => {
+        document.onscroll = () => {
             if(window.scrollY > window.innerHeight) {
                 setNavBackground('rgba(255,255,255,0.65');
             } else if(window.scrollY < window.innerHeight) {
                 setNavBackground('rgba(255,255,255,0');
             }
-        })
+        }
+        return function cleanup() {
+            window.onscroll()
+        }
     })
 
     const toggleNav = () => {
@@ -37,7 +41,16 @@ const mobileNav = () => {
     }
 
     return (
-        <div tabIndex="1" onBlur={closeNav} className="mobileNavContainer" style={{ height: '100%' }} onClick={closeNav}>
+        <motion.div 
+            animate={{
+                opacity: 1
+            }}
+            transition={{ duration: 1.6 }}
+            tabIndex="1" 
+            onBlur={closeNav} 
+            className="mobileNavContainer" 
+            style={{ height: '100%' }} 
+        >
             <div className="mobileNavHeader" style={{ backgroundColor: navBackground }}>
                 <img src="/logo/delpero_plain_transparent_short.png" alt="Logo" />
                 <FontAwesomeIcon onClick={ toggleNav } className="navIcon" icon={displayNav === '1' ? faTimes : faBars} />
@@ -49,7 +62,7 @@ const mobileNav = () => {
                 <div className="mobileNavEl"><Link href="/contact">Contact</Link></div>
                 <div className="mobileNavEl driversCore"><a target="_blank" href="https://DriversCore.app">Drivers Core</a></div>
             </nav>
-        </div>
+        </motion.div>
     )
 };
 

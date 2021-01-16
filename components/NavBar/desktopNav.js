@@ -13,9 +13,6 @@ const desktopNav = () => {
     const clearBackground = () => {
         setNavBackground('rgba(255,255,255,0)');
     }
-    const handleScroll = () => {
-        
-    }
 
     useEffect(() => {
         window.onscroll = () => {

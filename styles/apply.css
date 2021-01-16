@@ -52,8 +52,9 @@
 .requirementsVid iframe {
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     border: none;
+    height: 300px;
 }
 
 .joiningReason {
@@ -86,7 +87,7 @@
 }
 @media only screen and (min-width: 768px) {
     .applyTitle {
-        width: 50%;
+        width: 70%;
     }
     .applyRequirementsContainer {
         margin: 0 auto var(--contentSpace) auto;
@@ -98,7 +99,7 @@
     .bgImageApply {
         height: 100%;
     }
-    .requirementsVid {
+    .requirementsVid iframe {
         height: 400px;
     }
     .requirementsList {
@@ -108,15 +109,18 @@
     
 }
 @media only screen and (min-width: 992px) {
-    .requirementsVid {
+    .requirementsVid iframe {
         width: 80%;
         margin-left: 10%;
+    }
+    .applyTitle {
+        width: 50%;
     }
     
 }
 @media only screen and (min-width: 1200px) {
-    .requirementsVid {
-        height: 500px;
+    .requirementsVid iframe {
+        height: 600px;
     }
     .joiningReason {
         width: 80%;

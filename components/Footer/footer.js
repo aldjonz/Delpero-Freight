@@ -14,10 +14,10 @@ const footer = () => (
                 </div>
             </div>
         </div>
-        <div className="footerCol footerNews">
+        {/* <div className="footerCol footerNews">
             <h2 className="footerText">Recent News</h2>
 
-        </div>
+        </div> */}
     </div>
 );
 export default footer;

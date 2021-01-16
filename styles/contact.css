@@ -114,6 +114,7 @@
     }
     .contactForm h1 {
         width: 60%;
+        font-size: 50px;
     }
     .contactInput {
         width: 300px;
@@ -132,5 +133,8 @@
     }
     .contactCard p {
         font-size: 14px;
+    }
+    .contactForm h1 {
+        font-size: 70px;
     }
 }

@@ -1,32 +1,39 @@
-import Nav from '../components/NavBar/nav';
-import Footer from '../components/Footer/footer';
-import BottomFooter from '../components/Footer/bottomFooter';
+import Layout from '../components/layout';
 import SocialMediaLinks from '../components/SocialMedia/socialMediaLinks';
 import BgImage from '../components/UI/bgImage';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import ContactCard from '../components/ContactCard/contactCard';
 
 const contact = () => {
     return (
-        <div className="container">
-            <Nav />
+        <Layout>
+            {/* <Nav /> */}
             <div className="contactContainer">
                 <div className="contactForm">
                     <h1>get in touch</h1>
                     <br/>
-                    <p>Haven't found what you were looking for? <br/> Let us know below or email us directly.</p>
+                    <p data-aos="fade-down">Haven't found what you were looking for? <br/> Let us know below or email us directly.</p>
                     <br/>
                     <form>
-                        <input placeholder="Name" id="name" className="contactInput" type="text" required />
+                        <div data-aos="fade-up" data-aos-delay="350">
+                            <input placeholder="Name" id="name" className="contactInput" type="text" required />
+                        </div>
                         <br/>
-                        <input placeholder="Email" id="email" className="contactInput" type="email" required/>
+                        <div data-aos="fade-up" data-aos-delay="700">
+                            <input placeholder="Email" id="email" className="contactInput" type="email" required/>
+                        </div>
                         <br/>
-                        <input placeholder="Subject" id="subject" className="contactInput" type="text" required/>
+                        <div data-aos="fade-up" data-aos-delay="1050">
+                            <input placeholder="Subject" id="subject" className="contactInput" type="text" required/>
+                        </div>
                         <br/>
-                        <textarea placeholder="Message" id="message" className="contactInput" type="text" required/>
+                        <div data-aos="fade-up" data-aos-delay="1400">
+                            <textarea placeholder="Message" id="message" className="contactInput" type="text" required/>
+                        </div>
                         <br/>
-                        <button className="formButton" type="button">Submit</button>
+                        <div data-aos="fade-up" data-aos-delay="1750">
+                            <button className="formButton" type="button">Submit</button>
+                        </div>
                     </form>    
                 </div>
                 <BgImage 
@@ -51,9 +58,9 @@ const contact = () => {
                     </div>
                 </BgImage>
             </div>
-            <Footer />
-            <BottomFooter />
-        </div>
+            {/* <Footer />
+            <BottomFooter /> */}
+        </Layout>
     )
 };
 

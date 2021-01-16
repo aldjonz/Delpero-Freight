@@ -1,22 +1,16 @@
-import Head from 'next/head'
-// import styles from '../styles/Home.module.css'
-import Nav from '../components/NavBar/nav';
-import Footer from '../components/Footer/footer';
-import BottomFooter from '../components/Footer/bottomFooter';
+import Layout from '../components/layout';
 import HomePage from './home';
+
 import SocialMediaLinks from '../components/SocialMedia/socialMediaLinks';
 
 export default function Home() {
   return (
-    <div className="container">
-      <Nav />
+    <Layout>
       <HomePage />
       <SocialMediaLinks 
-        backgroundStyle="none"
+          backgroundStyle="none"
       />
-      <Footer />
-      <BottomFooter />
-    </div>
+    </Layout>
 
   )
 }

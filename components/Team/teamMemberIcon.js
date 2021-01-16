@@ -1,5 +1,9 @@
 const teamMemberIcon = (props) => (
-    <div className="memberIcon">
+    <div 
+        data-aos="fade-up"
+        data-aos-delay={props.animationDelay}
+        className="memberIcon"
+    >
         <div >
             <img className="memberImage" src={props.image} alt={props.memberName} />
         </div>

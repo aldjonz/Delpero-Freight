@@ -81,6 +81,21 @@ a {
   height: 100%;
   overflow: hidden;
 }
+#spinnerContainer {
+  position: fixed;
+  z-index: 2500;
+  font-size: 40px;
+  /* background: coral; */
+  /* border-radius: 50%; */
+  height: fit-content;
+  width: fit-content;
+  transform:  translateY(90px);
+}
+#spinnerContainer :first-child {
+  height: 12px;
+  width: 100vw;
+  background: rgba(10,160,255,0.4);
+}
 /* Background Image Section */
 .bgImageContainer {
   width: 100%;
@@ -99,7 +114,7 @@ a {
 /* button styling */
 .mainButton {
   height: 40px;
-  width: 120px;
+  width: 130px;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   border-top-left-radius: 25px;
@@ -415,7 +430,7 @@ Link:active {
   display: inline-block;
   height: 60px;
   width: 60px;
-  margin: 12px 2px;
+  /* margin: 12px 2px; */
   overflow: hidden;
   background: #fff;
   border-radius: 50px;
@@ -440,6 +455,7 @@ Link:active {
   width: 60px;
   border-radius: 50%;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   line-height: 60px;
   font-size: 22px;
   transition: all 0.4s ease-out;
@@ -447,7 +463,6 @@ Link:active {
 
 .buttonRound span {
   font-size: 20px;
-  font-weight: 500;
   line-height: 60px;
   margin-left: 10px;
   transition: all 0.4s ease-out;
